@@ -67,6 +67,11 @@
         }
         {%- endif -%}
 
+        /* add link to view in repository */ 
+        if (record.highres) {
+            itemLink += '<a href="' + record.highres + '" target="_blank" class="ml-2 btn btn-outline-dark">View in CT Digital Archive</a>';
+        }
+
         /* add content to item display area */
         document.getElementById("item-image").innerHTML = itemImage;
         document.getElementById("item-link").innerHTML = itemLink;

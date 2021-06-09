@@ -8,25 +8,22 @@ layout: page
   {% include index/carousel.html title="Featured Items" height="350" %}
   
   </div>
-  <div class="col-md-3">
-    
+
+  <div class="col-md-4">
     {% include index/description.html %}
   </div>
 
-  <div class="col-md-3">
-    {% include index/time.html %}
-  </div>
-
-  <div class="col-md-3">
+  <div class="col-md-4">
     {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="info" %}
   </div>
 
-  <div class="col-md-3">
-    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
+  <div class="col-md-4">
     {% include index/objects.html %}
   </div>
     
   <div class="col-md-12">
+
+    {% include feature/timelinejs.html %}
 
     {% include index/data-download.html %}
 
